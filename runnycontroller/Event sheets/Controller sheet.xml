@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controller sheet</name>
+    <events>
+        <event-block sid="561633272303678">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="734716125358965" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-5" name="Set width" sid="404461702317079" type="Play">
+                    <param id="0" name="Width">0</param>
+                </action>
+                <action disabled="1" id="-6" name="Set height" sid="362214587981605" type="Play">
+                    <param id="0" name="Height">0</param>
+                </action>
+                <action id="3" name="Set font size" sid="166864416297341" type="Text">
+                    <param id="0" name="Size (pt)">40</param>
+                </action>
+                <action id="2" name="Set font face" sid="362529886317453" type="Text">
+                    <param id="0" name="Font face">&quot;Arial&quot;</param>
+                    <param id="1" name="Style">1</param>
+                </action>
+                <action disabled="1" id="-34" name="Set layer background color" sid="396587469123711" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Color">rgb(random(0,255), random(0,255), random(0,255))</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>To skip to the Start screen.</comment>
+        <event-block disabled="1" sid="605737042000655">
+            <conditions>
+                <condition id="0" name="On button down" sid="558143594749468" type="SkipButton" />
+            </conditions>
+            <actions>
+                <action id="13" name="Send message" sid="713130323203143" type="SkipButton">
+                    <param id="0" name="Data">&quot;00&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="896089804644723" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="13" name="Send message" sid="448341702460931" type="SkipButton">
+                    <param id="0" name="Data">&quot;9&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>When is on Start screen.</comment>
+        <event-block disabled="1" sid="596848247983618">
+            <conditions>
+                <condition id="25" name="On message received" sid="486322400682213" type="SkipButton">
+                    <param id="0" name="Message">&quot;0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="366889953517340" type="SkipButton" />
+                <action id="-15" name="Set visible" sid="303560192102305" type="PS">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="668681268164183" type="About">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="973861996511227" type="RC">
+                    <param id="0" name="X">527</param>
+                    <param id="1" name="Y">41.697</param>
+                </action>
+                <action id="-7" name="Set size" sid="218123115115360" type="RC">
+                    <param id="0" name="Width">296</param>
+                    <param id="1" name="Height">39</param>
+                </action>
+                <action id="-5" name="Set width" sid="528944602537823" type="Play">
+                    <param id="0" name="Width">406</param>
+                </action>
+                <action id="-6" name="Set height" sid="543275423671500" type="Play">
+                    <param id="0" name="Height">197</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>When the game restarts.</comment>
+        <event-block disabled="1" sid="378714140584402">
+            <conditions>
+                <condition id="25" name="On message received" sid="262652739496662" type="SkipButton">
+                    <param id="0" name="Message">&quot;0000&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="896503560077508" type="System" />
+            </actions>
+        </event-block>
+        <comment>To Play the game.</comment>
+        <event-block disabled="1" sid="453004990573955">
+            <conditions>
+                <condition id="0" name="On button down" sid="320393377733332" type="Play" />
+            </conditions>
+            <actions>
+                <action id="13" name="Send message" sid="613317356530481" type="Play">
+                    <param id="0" name="Data">&quot;1&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="250964215491447" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="13" name="Send message" sid="892179610790706" type="SkipButton">
+                    <param id="0" name="Data">&quot;9&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="427816496267074">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="875042548210492" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="856306617104321" type="Text">
+                    <param id="0" name="Text">Play.MessageReceived</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="382807457929854">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="624029470781394" type="Arrows">
+                    <param id="0" name="Unique ID">9</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="868066139165003">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="680204476495794" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Arrows</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="13" name="Send message" sid="677675055525365" type="DPad">
+                            <param id="0" name="Data">&quot;up&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="861094863773005">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="558161239125212" type="Arrows">
+                    <param id="0" name="Unique ID">10</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="617648917689155">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="858358547811156" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Arrows</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="13" name="Send message" sid="868651637608800" type="DPad">
+                            <param id="0" name="Data">&quot;down&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="517427403600997">
+            <conditions>
+                <condition id="3" name="On button released" sid="997162258230822" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="13" name="Send message" sid="889472390986694" type="DPad">
+                    <param id="0" name="Data">&quot;stop&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="244057141674699">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="577950778523450" type="Arrows">
+                    <param id="0" name="Unique ID">13</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="460684941069093">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="680968685670612" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Arrows</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="13" name="Send message" sid="403691653091512" type="DPad">
+                            <param id="0" name="Data">&quot;left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="369462343884082">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="944074206411348" type="Arrows">
+                    <param id="0" name="Unique ID">14</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="345745158206104">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="127297973280628" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Arrows</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="13" name="Send message" sid="556083923005605" type="DPad">
+                            <param id="0" name="Data">&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="145960095347763">
+            <conditions>
+                <condition id="25" name="On message received" sid="583393000576489" type="DPad">
+                    <param id="0" name="Message">&quot;collis&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="12" name="Vibrate" sid="347010311969888" type="Browser">
+                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                </action>
+                <action disabled="1" id="-34" name="Set layer background color" sid="453832754140866" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Color">rgb(random(0,255), random(0,255), random(0,255))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="949059026741032">
+            <conditions>
+                <condition id="2" name="On device join" sid="731849571880845" type="AirConsole" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="942277788498457" type="Text">
+                    <param id="0" name="Text">&quot;Nickname: &quot;&amp;DPad.DeviceNickname</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="548232904763084">
+            <conditions>
+                <condition id="0" name="On connect" sid="575223752194268" type="AirConsole2" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="120834578297706" type="Text">
+                    <param id="0" name="Text">&quot;Nickname: &quot;&amp;DPad.DeviceNickname</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="611504412855575">
+            <conditions>
+                <condition id="17" name="On device profile change" sid="961779085187840" type="AirConsole2" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="402481405242632" type="Text">
+                    <param id="0" name="Text">&quot;Nickname: &quot;&amp;DPad.DeviceNickname</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

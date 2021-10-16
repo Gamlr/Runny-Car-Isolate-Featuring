@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3vhs0viocj1w2</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="N-Dream AG" id="AirConsole" version="1">AirConsole</plugin>
+        <plugin author="Psychokiller1888 for N-Dreams AG" id="AirConsole2" version="1">AirConsole 2</plugin>
+        <plugin author="X3M" id="AirConsoleController" version="1">AirConsole Controller</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1067</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="615311827764790">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="249550374856627">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="RC" sid="500150643954673">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440156123644104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SkipButton" sid="172103208270052">
+            <plugin id="AirConsoleController" />
+        </object-type>
+        <object-type name="PS" sid="414581623987699">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="545087557252213" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0425532" />
+                            <point x="0.5" y="0" />
+                            <point x="0.981481" y="0.0425532" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.981481" y="0.957447" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0185185" y="0.957447" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="About" sid="562162709387125">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="943666966884690" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0425532" />
+                            <point x="0.5" y="0" />
+                            <point x="0.981481" y="0.0425532" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.981481" y="0.957447" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0185185" y="0.957447" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Play" sid="723213902526514">
+            <plugin id="AirConsoleController" />
+        </object-type>
+        <object-type name="Text" sid="149720088624706">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="DPad" sid="445645630899900">
+            <plugin id="AirConsoleController" />
+        </object-type>
+        <object-type name="Browser" sid="329519681854442">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Arrows" sid="341758731206121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="707730033062613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="656438648020161">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="AirConsole" sid="768908634467670">
+            <plugin id="AirConsole" />
+        </object-type>
+        <object-type name="AirConsole2" sid="917990722474920">
+            <plugin id="AirConsole2" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Controller.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Controller sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Browser" uid="8" />
+        <global-instance type="Mouse" uid="11" />
+        <global-instance type="AirConsole" uid="12">
+            <properties>
+                <max-players>2</max-players>
+            </properties>
+        </global-instance>
+        <global-instance type="AirConsole2" uid="15">
+            <properties>
+                <max-players>4</max-players>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
